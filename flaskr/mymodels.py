@@ -31,3 +31,20 @@ class Article(db.Model):
         except Exception as e:
             print(e)
             return False
+
+    def delete_article(self):
+        try:
+            db.session.delete(self)
+            db.session.commit()
+            return True
+        except Exception as e:
+            print(e)
+            return False
+
+    def update_article(self):
+        try:
+            db.session.commit()
+            return True
+        except Exception as e:
+            print(e)
+            return False

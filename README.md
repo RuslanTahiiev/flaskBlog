@@ -1,5 +1,5 @@
 #Flask + MySQL
 Bootstrap
 
-> $env:FLASK_APP = "hello"
+> $env:FLASK_APP = "main"
 > flask run
