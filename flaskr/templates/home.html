@@ -6,14 +6,10 @@ Home page
 {% block body %}
     <div class="container">
         <div class="px-4 py-5 my-5 text-center">
-            <img class="d-block mx-auto mb-4" src="/docs/5.1/assets/brand/bootstrap-logo.svg" alt="" width="72" height="57">
+            <img class="d-block mx-auto mb-4" src="{{ url_for('static', filename='img/std.jpg') }}" alt="" width="72" height="57">
             <h1 class="display-5 fw-bold">Home page</h1>
             <div class="col-lg-6 mx-auto">
-              <p class="lead mb-4">Some text.</p>
-              <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-                <a href="/create" class="btn btn-primary btn-lg px-4 gap-3">Create</a>
-                <a href="/posts" class="btn btn-primary btn-lg px-4 gap-3">Posts</a>
-              </div>
+              <p class="lead mb-4">Beautiful is better than ugly. Explicit is better than implicit.</p>
             </div>
         </div>
     </div>
