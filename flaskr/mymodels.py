@@ -1,11 +1,6 @@
-from main import app
-from myconfig import db_url
+#from myconfig import db_url
+from app import db
 from datetime import datetime
-from flask_sqlalchemy import SQLAlchemy
-
-app.config['SQLALCHEMY_DATABASE_URI'] = db_url
-app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
-db = SQLAlchemy(app)
 
 
 class Article(db.Model):
