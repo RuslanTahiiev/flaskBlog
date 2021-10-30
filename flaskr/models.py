@@ -1,5 +1,4 @@
-#from myconfig import db_url
-from app import db
+from . import db
 from datetime import datetime
 
 
